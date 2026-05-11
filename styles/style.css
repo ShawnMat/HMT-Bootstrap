@@ -1,0 +1,21 @@
+.nav1{
+    background-color: rgb(35, 18, 226);
+    min-height: 50px;
+}
+
+#icons{
+    width: 15px;
+    height: 15px;
+}
+
+#watch-men{
+    max-width: 350px;
+    
+}
+#watch-women{
+    max-width: 350px;
+
+}
+.option{
+    color: grey;
+}
