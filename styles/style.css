@@ -19,3 +19,22 @@
 .option{
     color: grey;
 }
+.card{
+    width: 250px;
+    height: 315px;
+}
+.cont-border {
+    background-color: #f7f7f7
+}
+.cont-border-img{
+    width: 90%;
+    height: auto;
+    /* background-color: grey; */
+
+}
+#btn-options{
+    /* width: 50%;
+    height: auto; */
+    width: 25px;
+    height: 25px;
+}
