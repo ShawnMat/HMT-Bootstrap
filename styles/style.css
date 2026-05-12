@@ -1,5 +1,5 @@
 .nav1{
-    background-color: rgb(35, 18, 226);
+    background-color: #2312e2;
     min-height: 50px;
 }
 
@@ -14,27 +14,82 @@
 }
 #watch-women{
     max-width: 350px;
-
+    
 }
 .option{
     color: grey;
 }
+
+.scroll-gallery::-webkit-scrollbar{
+    display: none;
+}
 .card{
     width: 250px;
     height: 315px;
+    flex-shrink: 0;
+}
+/* .watch-btns
+{
+    opacity: 0;
+    transition: 0.5s ease;
+} */
+.cont-btn{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+/* 
+.card:hover .cont-btn
+{
+    cursor: pointer;
+    opacity: 1;
+} */
+ .card:hover .cont-btn{
+    opacity:1;
+    visibility:visible;
+    cursor:pointer;
 }
 .cont-border {
-    background-color: #f7f7f7
-}
-.cont-border-img{
-    width: 90%;
-    height: auto;
-    /* background-color: grey; */
+    /* background-color: #f7f7f7; */
+    border: 10px #f7f7f7 solid;
+    overflow: hidden;
+    
 
 }
-#btn-options{
+
+.cont-border-img{
+    width: 100%;
+    height: auto;
+}
+
+.cont-border-img:hover{
+    transform: scale(1.5);
+}
+.cart-img{
     /* width: 50%;
     height: auto; */
     width: 25px;
     height: 25px;
+}
+
+#cont-btn-btn {
+    background-color: #2312e2;
+
+}
+#prev2{
+    top: 30%;
+    left: 0px;
+    z-index: 10;
+}
+#next2{
+    top: 30%;
+    right: 0px;
+    z-index: 10;
+    transform: translate(-20,-20);
+}
+#play-button{
+    width: 70px;
+    height: 70px;
+    top: 45%;
+    left: 50%;
 }
