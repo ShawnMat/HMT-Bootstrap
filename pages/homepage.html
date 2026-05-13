@@ -1,4 +1,4 @@
-<!-- Hours I spent on this project - 6hours -->
+<!-- Hours I spent on this project - 8.5hours -->
 <!-- Hours you spent on this project - 0hours
  pls update the time -->
 
@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HMT-Bootstrap</title>
     <link rel="stylesheet" href="/styles/style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
@@ -36,14 +36,43 @@
             </div>
         </div>
     </div>
-    <div class="navbar px-4 d-flex gap-5 shadow fw-bold sticky-top bg-white">
-        <P>WATCHES</P>
-        <P>TOWER CLOCK</P>
-        <p>GIFTING</p>
+    <div class="navbar px-4 d-flex shadow fw-bold sticky-top bg-white">
+        <button class="menu text-dark"><i class="fa-solid fa-bars"></i></button>
+        <div class="watch-popup">
+            <P class="left-texts position-relative">WATCHES</P>
+            <div class=" container popup w-50 shadow-lg py-3 px-4 gap-5 position-absolute bg-white rounded-3">
+                <div class="pop-up1">
+                    <h5>SHOP FOR</h5>
+                    <p>Men</p>
+                    <p>Women</p>
+                    <p>Pair</p>
+                    <p>Unisex</p><br><br><br>
+                    <button class="pop-up-bt">View All</button>
+                </div>
+                <div class="pop-up2">
+                    <h5>SHOP BY TYPE</h5>
+                    <p>Quartz</p>
+                    <p>Automatic</p>
+                    <p>Mechanical</p><br><br><br><br>
+                    <button type="button" class=" pop-up-bt">View All</button>
+                </div>
+                <div class="pop-up3">
+                    <h5>SHOP BY COLLECTIONS</h5>
+                    <p>Stellar</p>  
+                    <p>Plus</p>
+                    <p>Vihaan</p>
+                    <p>Amrut</p>
+                    <p>Sona</p><br><br>
+                    <button class="pop-up-bt">View All</button>
+                </div>
+            </div>
+        </div>
+        <P class="left-texts">TOWER CLOCK</P>
+        <p class="left-texts">GIFTING</p>
         <img src="/icons/logo.png" alt="logo" style="width: 150px; height: 31px;">
-        <p>ABOUT US</p>
-        <p>CONTACT US</p>
-        <p>STORE LOCATOR</p>
+        <p class="right-texts">ABOUT US</p>
+        <p class="right-texts">CONTACT US</p>
+        <p class="right-texts">STORE LOCATOR</p>
         <img src="/icons/search.png" alt="search" id="icons" style="width: 30px; height: 30px;" >
     </div>
 
@@ -277,66 +306,191 @@
     <h4 class=" d-flex justify-content-center mt-5 mb-5"> HMT EXPLORE WATCHES</h4>
     <p class="d-flex justify-content-center">HMT explore watches description.</p>
     <div class="explore position-relative">
-        <img class="" src="/images/image4.jpg" alt="">
+        <img class="w-100" src="/images/image4.jpg" alt="">
         <img class="position-absolute" id="play-button" src="/icons/play-button.png" alt="">
     </div>
     <h4 class="fw-bold d-flex justify-content-center mt-5 mb-5"> HMT COLLECTIONS</h4>
 
-        <div class="container-fluid">
-            <div class="scroll-gallery">
-                <div class="card">
-                    <div class="card-border">
-                        <img src="https://www.hmtwatches.in/storage/app/public/image/collections/24957255544.jpg" alt="">
+        <div class="container-fluid mb-5 d-flex justify-content-center position-relative">
+            <button class="position-absolute" id="prev3">&#10094;</button>
+            <div class=" container w-75 scroll-gallery-2 mt-5 d-flex justify-content-start overflow-auto ">
+                <!-- Card 1 -->
+                <div class="card border-0">
+                    <div class="cont-border d-flex justify-content-center ">
+                        <img src="https://www.hmtwatches.in/storage/app/public/image/collections/24957255544.jpg" alt="" class="cont-border-img ">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-center ">Commando</p>
                     </div>
                 </div>
+                <!-- Card 2 -->
+                 <div class="card border-0">
+                    <div class="cont-border d-flex justify-content-center ">
+                        <img src="https://www.hmtwatches.in/storage/app/public/image/collections/271792943788.jpg" alt="" class="cont-border-img ">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-center ">Kailash</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                 <div class="card border-0">
+                    <div class="cont-border d-flex justify-content-center ">
+                        <img src="https://www.hmtwatches.in/storage/app/public/image/collections/2324175928.jpg" alt="" class="cont-border-img ">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-center ">Gandaberunda</p>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                 <div class="card border-0">
+                    <div class="cont-border d-flex justify-content-center ">
+                        <img src="https://www.hmtwatches.in/storage/app/public/image/collections/021516297734.jpg" alt="" class="cont-border-img ">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-center ">Bahadur</p>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                 <div class="card border-0">
+                    <div class="cont-border d-flex justify-content-center ">
+                        <img src="https://www.hmtwatches.in/storage/app/public/image/collections/23188544533.png" alt="" class="cont-border-img ">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-center ">Vijay</p>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                 <div class="card border-0">
+                    <div class="cont-border d-flex justify-content-center ">
+                        <img src="https://www.hmtwatches.in/storage/app/public/image/collections/032125154046.jpg" alt="" class="cont-border-img ">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-center ">Operation Sindoor</p>
+                    </div>
+                </div>
+                <!-- Card 7 -->
+                 <div class="card border-0">
+                    <div class="cont-border d-flex justify-content-center ">
+                        <img src="https://www.hmtwatches.in/storage/app/public/image/collections/28594529980.jpg" alt="" class="cont-border-img ">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-center ">Pilot Automatic</p>
+                    </div>
+                </div>
+                <!-- Card 8 -->
+                 <div class="card border-0">
+                    <div class="cont-border d-flex justify-content-center ">
+                        <img src="https://www.hmtwatches.in/storage/app/public/image/collections/081880758978.jpg" alt="" class="cont-border-img ">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-center ">Vivek</p>
+                    </div>
+                </div>
+                <!-- Card 9 -->
+                 <div class="card border-0">
+                    <div class="cont-border d-flex justify-content-center ">
+                        <img src="https://www.hmtwatches.in/storage/app/public/image/collections/251258350521.jpg" alt="" class="cont-border-img ">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-center ">Jawan Automatic</p>
+                    </div>
+                </div>
+                <!-- Card 10 -->
+                 <div class="card border-0">
+                    <div class="cont-border d-flex justify-content-center ">
+                        <img src="https://www.hmtwatches.in/storage/app/public/image/collections/24447271239.jpg" alt="" class="cont-border-img ">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-center ">Janata Automatic</p>
+                    </div>
+                </div>
+                <button class="position-absolute" id="next3">&#10095;</button>
             </div>
         </div>
+        <div class="hmt-stellar position-relative">
+            <img class="w-100" src="/images/htmlcollectionbanner.jpg" alt="">
+            <div class="stellar-cont position-absolute">
+                <p class="stellar-text">ACCURATE TIME KEEPING AND TROUBLE FREE PERFORMANCE</p>
+                <h4 class="stellar-text">HMT WATCHES</h4>
+                <button class="btn mt-4 text-white" id="stellar-btn" type="button">Discover your style</button>
+            </div>
+        </div>
+        <!-- LEAD TEXT -->
+         <div class=" container text-cont  px-5 pt-5 justify-text fs-5">
+            <p>We have immense pleasure in welcoming you to the official website of HMT Watches!.
+                 HMT,a Public Sector Undertaking by Government of India, is a pioneer in Watch manufacturing in India since 1961.
+                 HMT uses High Quality, Precision Metallic components for Accurate time keeping and trouble free performance - that lasts a life time. 
+                 Mechanical Hand wound, Automatic, Quarts, the Braille, the Skeleton Watch, Pocket Watch- each a true masterpiece in its class. 
+                 HMT Watches come in a wide range of Attractive designs and Affordable Price. Watches that are an exquisite blend of form and function, of style and substance.
+            </p>
+            <div class="btn-cont mt-4 d-flex justify-content-between">
+                <button class=" btn px-5 py-3" id="text-btn1" type="button">History of HMT Watches</button>
+                <button class=" btn px-5 py-3 text-white" id="text-btn2" type="button">HMT Premium Watches</button>
+            </div>
+         </div>
 
+         <!-- end banner -->
+          <div class="end-banner position-relative mt-5">
+            <img class="w-100" src="/images/endbanner.jpg" alt="">
+            <div class="end-banner-cont position-absolute">
+                <p class="end-b-text">EACH A TRUE MASTERPIECE IN ITS CLASS.</p>
+                <h4 class="end-b-text">HMT SKELETON</h4>
+                <button class="btn mt-4 px-5 py-2 fs-5 text-white" id="end-b-btn">Find your type</button>
+            </div>
+          </div>
 
+          <!-- Footer -->
+           <footer  style="background-color: #0033AB;" >
+            <div class="d-flex flex-wrap justify-content-between py-4" style="margin-left: 80px ;">
+                <div class="prods">
+                    <h4 class="lead fw-bold text-white">Our Products</h4>
+                    <p class="text-white mt-2">Watches</p>
+                    <p class="text-white">Tower Clocks</p>
+                </div>
+                <div class="cust_services">
+                    <h4 class="lead fw-bold text-white">Customer Services</h4>
+                    <p class="text-white mt-2">Payment Options</p>
+                    <p class="text-white">Track Order</p>
+                    <p class="text-white">Find a store</p>
+                    <p class="text-white">Gifting</p>
+                    <p class="text-white">Contact Us</p>
+                    <p class="text-white">FAQ</p>
+                </div>
+                <div class="policies">
+                    <h4 class="lead fw-bold text-white">Policies</h4>
+                    <p class="text-white mt-2">Return & Exchange</p>
+                    <p class="text-white">Cancellation</p>
+                    <p class="text-white">Shipping</p>
+                    <p class="text-white">Warranty POlicies</p>
+                    <p class="text-white">Terms & Conditions</p>
+                    <p class="text-white">Privacy policy</p>
+                </div>
+                <div class="abt-us">
+                    <h4 class="lead fw-bold text-white">About Us</h4>
+                    <p class="text-white mt-2">Corporate</p>
+                    <p class="text-white">Vision & Mision</p>
+                    <p class="text-white">Right to Information</p>
+                    <p class="text-white">Vigilance Corner</p>
+                    <p class="text-white">Careers</p>
+                </div>
+                <div class="htm-limited w-25">
+                    <h4 class="lead fw-bold text-white">HMT LIMITED</h4>
+                    <p class="text-white mt-2 w-75">Auxiliary Business Division
+                        Jalahalli, Bengaluru -560013
+                        GSTIN : 29AAACH7073D2ZL</p>
+                    <p class="text-white">Follow Us On</p>
+                    <a href="" class="text-light me-2"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+                    <a href=""class="text-light me-2"><i class="fa-brands fa-x-twitter fa-xl"></i></a>
+                    <a href=""class="text-light me-2"><i class="fa-brands fa-youtube fa-xl"></i></a>
+                    <a href=""class="text-light fs-4 "><i class="fa-brands fa-instagram"></i></a>
+                </div>
+ 
+            </div>
+        </footer>
 
-
-
-
-
-<div>sdfasf</div>
-<div>sdfasf</div>
-<div>sdfasf</div>
-<div>sdfasf</div>
-<div>sdfasf</div>
-<div>sdfasf</div>
-<div>sdfasf</div>
-<div>sdfasf</div>
-<div>sdfasf</div>
-<div>sdfasf</div>
-<div>sdfasf</div>
-<div>sdfasf</div>
-<div>sdfasf</div>
-<div>sdfasf</div>
-<div>sdfasf</div>
-
-
-
-
-<div>sdfasf</div>
-
-
-<div>sdfasf</div>
-
-<div>sdfasf</div>
-
-
-
-
-
-
-
-
-
-
-<div>sdfasf</div>
-
-
-<div>sdfasf</div>
+        <div class="box d-none position-fixed bg-dark text-white px-4 py-4">
+            TOP
+        </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 <script src="/scripts/script.js"></script>

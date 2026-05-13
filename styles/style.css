@@ -1,3 +1,7 @@
+body{
+    position: relative;
+}
+
 .nav1{
     background-color: #2312e2;
     min-height: 50px;
@@ -19,8 +23,18 @@
 .option{
     color: grey;
 }
-
+.scroll-gallery
+{
+    gap: 35px;
+}
 .scroll-gallery::-webkit-scrollbar{
+    display: none;
+}
+.scroll-gallery-2
+{
+    gap: 35px;
+}
+.scroll-gallery-2::-webkit-scrollbar{
     display: none;
 }
 .card{
@@ -28,22 +42,11 @@
     height: 315px;
     flex-shrink: 0;
 }
-/* .watch-btns
-{
-    opacity: 0;
-    transition: 0.5s ease;
-} */
 .cont-btn{
     opacity: 0;
     visibility: hidden;
     transition: 0.3s ease;
 }
-/* 
-.card:hover .cont-btn
-{
-    cursor: pointer;
-    opacity: 1;
-} */
  .card:hover .cont-btn{
     opacity:1;
     visibility:visible;
@@ -56,7 +59,6 @@
     
 
 }
-
 .cont-border-img{
     width: 100%;
     height: auto;
@@ -64,6 +66,7 @@
 
 .cont-border-img:hover{
     transform: scale(1.5);
+    transition: 1s ease;
 }
 .cart-img{
     /* width: 50%;
@@ -93,3 +96,140 @@
     top: 45%;
     left: 50%;
 }
+
+#prev3{
+    top: 45%;
+    left: 10%;
+    z-index: 10;
+}
+#next3{
+    top: 45%;
+    right: 10%;
+    z-index: 10;
+    /* transform: translate(-20,-20); */
+}
+
+.stellar-cont{
+    top:40%;
+    left: 5%;
+}
+#stellar-btn{
+    background-color: #2312e2;
+    /* color: white; */
+    border: none;
+}
+.stellar-text{
+    color: #2312e2;
+}
+.text-cont{
+    color: #595959;
+}
+#text-btn1{
+    background-color: #2a2929;
+    color: white;
+    transition: 0.5s ease;
+}
+#text-btn1:hover{
+    background-color:white;
+    color: black;
+    border: 2px #000000 solid;
+
+}
+#text-btn2{
+    background-color: #c749c5;
+}
+#text-btn2:hover{
+    background-color: #6b40b1;
+}
+.end-banner-cont{
+    top: 40%;
+    right: 5%;
+    text-align: right;
+}
+#end-b-btn{
+    background-color: #2312e2;
+}
+.end-b-text{
+    color: #2312e2;
+}
+
+.box{
+    bottom: 5%;
+    right: 2%;
+}
+.box:hover{
+    cursor: pointer;
+}
+
+/* menu pop up */
+
+.menu{
+    display: none;
+}
+
+.show-menu{
+    display: block;
+}
+
+.hide-nav{
+    display: none;
+}
+/* .menu{
+    opacity:0;
+}
+
+.show-menu{
+    opacity:1;
+}
+
+.hide-nav{
+    opacity:0;
+    
+} */
+
+.popup{
+    display: none;
+}
+.watch-popup:hover .popup{
+    /* bottom: 50%; */
+    left: 2%;
+    display: flex;
+}
+.pop-up-bt{
+    background-color: #2312e2;
+    color: white;
+    border: none;
+}
+.pop-up1 p{
+    font-weight: lighter;
+}
+.pop-up2 p{
+    font-weight: lighter;
+}
+.pop-up3 p{
+    font-weight: lighter;
+}
+
+/* top button */
+.box{
+    bottom: 30px;
+    right: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s ease;
+}
+
+.box-active{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* media queries */
+ @media (min-width:850px) and (max-width:1114px){
+
+ }
