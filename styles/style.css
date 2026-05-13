@@ -1,7 +1,9 @@
-body{
+/* body{
     position: relative;
-}
-
+} */
+/* *{
+    outline: 1px solid red;
+} */
 .nav1{
     background-color: #2312e2;
     min-height: 50px;
@@ -19,6 +21,15 @@ body{
 #watch-women{
     max-width: 350px;
     
+}
+.men h3{
+    bottom: 10%;
+    left: 35%;
+    
+}
+.women h3{
+    bottom: 10%;
+    left: 35%;
 }
 .option{
     color: grey;
@@ -174,18 +185,6 @@ body{
 .hide-nav{
     display: none;
 }
-/* .menu{
-    opacity:0;
-}
-
-.show-menu{
-    opacity:1;
-}
-
-.hide-nav{
-    opacity:0;
-    
-} */
 
 .popup{
     display: none;
@@ -216,7 +215,7 @@ body{
     right: 30px;
     border-radius: 10px;
     cursor: pointer;
-
+    z-index: 20;
     opacity: 0;
     visibility: hidden;
 
@@ -230,6 +229,35 @@ body{
 
 
 /* media queries */
- @media (min-width:850px) and (max-width:1114px){
-
+ @media (min-width:425px) and (max-width:850px){
+    .left-texts{
+        display: none;
+    }
+    .right-texts{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    #play-button{
+        display: none;
+    }
+    .stellar-cont{
+        display: none;
+    }
+    .btn-cont{
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .end-banner-cont{
+        display: none;
+    }
+    .support{
+        display: none;
+    }
+    .support2{
+        display: flex;
+    }
  }

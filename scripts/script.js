@@ -57,46 +57,70 @@ document.getElementById("prev3").addEventListener("click", () => {
   });
 });
 // for nav-bar
-const menuBtn = document.querySelector(".menu")
-const navLefttexts = document.querySelectorAll(".left-texts")
-const navRighttexts = document.querySelectorAll(".right-texts")
-window.addEventListener("scroll", function () {
-  if (window.scrollY > 100) {
-    console.log("working")
-    menuBtn.classList.add("show-menu")
-    navLefttexts.forEach(function(item){
-      item.classList.add("hide-nav")
-    })
+const menuBtn = document.querySelector(".menu");
 
-    navRighttexts.forEach(function(item){
-      item.classList.add("hide-nav")
-    })
-    // menuOpened = false; 
-  } 
-  else {
-    console.log("working-back")
-    menuBtn.classList.remove("show-menu")
+const navLefttexts = document.querySelectorAll(".left-texts");
+const navRighttexts = document.querySelectorAll(".right-texts");
 
-    navLefttexts.forEach(function(item){
-      item.classList.remove("hide-nav")
-    })
+let menuExpanded = false;
 
-    navRighttexts.forEach(function(item){
-      item.classList.remove("hide-nav")
-    })
-  }
+window.addEventListener("scroll", () => {
+
+    if(window.scrollY > 100){
+
+        // if menu NOT expanded
+        if(!menuExpanded){
+
+            menuBtn.classList.add("show-menu");
+
+            navLefttexts.forEach(item => {
+                item.classList.add("hide-nav");
+            });
+
+            navRighttexts.forEach(item => {
+                item.classList.add("hide-nav");
+            });
+
+        }
+
+    }
+    else{
+
+        // top position reset
+        menuExpanded = false;
+
+        menuBtn.classList.remove("show-menu");
+
+        navLefttexts.forEach(item => {
+            item.classList.remove("hide-nav");
+        });
+
+        navRighttexts.forEach(item => {
+            item.classList.remove("hide-nav");
+        });
+
+    }
+
 });
-menuBtn.addEventListener("click",()=>{
-      menuBtn.classList.remove("show-menu")
 
-    navLefttexts.forEach(function(item){
-      item.classList.remove("hide-nav")
-    })
 
-    navRighttexts.forEach(function(item){
-      item.classList.remove("hide-nav")
-    })
-})
+menuBtn.addEventListener("click", () => {
+
+    menuExpanded = true;
+
+    // hide menu icon
+    menuBtn.classList.remove("show-menu");
+
+    // show navbar texts
+    navLefttexts.forEach(item => {
+        item.classList.remove("hide-nav");
+    });
+
+    navRighttexts.forEach(item => {
+        item.classList.remove("hide-nav");
+    });
+
+});
 
 // for top button
 // for top button
